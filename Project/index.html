@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/back_top.css">
+    <link rel="stylesheet" href="./css/fom.css">
+    <link rel="stylesheet" href="./css/fixed_navbar.css">
+    <link rel="stylesheet" href="./css/preloader.css">
+    <title>Narcology</title>
+    <style>
+        .object {
+            position: absolute;
+            left: 0;
+            top: 50px;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="preloader">
+        <img id="logo" src="./images/header/Logo.png" alt="#">
+        <p>Загружаемся...</p>
+    </div>
+    <script src="./js/loading.js"></script>
+    <!--header-->
+    <div class="header">
+        <div class="workspace">
+            <div class="header-first">
+                <img class="header-logo" src="./images/header/Logo.png" alt="#" onclick="location.reload()" />
+                <img class="name" src="./images/header/Name.png" alt="#" />
+                <img class="social_media" src="./images/header/vk.png" alt="#" />
+                <img class="social_media" src="./images/header/facebook.png" alt="#" />
+                <img class="social_media" src="./images/header/watsapp.png" alt="#" />
+                <img class="social_media" src="./images/header/telegram.png" alt="#" style="margin-right: 0;" />
+                <div style="margin-left: clamp(214.286px, 27.902vw, 500px);text-align: right;">
+                    <p class="number">8 (800) 123-45-67</p>
+                    <p class="adress"> г. Богучар, ул. Мжд Киевское 17-й км</p>
+                </div>
+                <div>
+                    <img class="search" src="./images/header/search.png" alt="#" />
+                </div>
+                <div class="button-search">
+                    <p class="button-text">Срочный вызов врача</p>
+                </div>
+            </div>
+
+            <div class="nav-menu" id="navbar">
+                <p class="nav-menu-text">Наркомания</p>
+                <img class="img-menu" style="margin-right: clamp(56.786px, 7.394vw, 132.5px);"
+                    src="./images/header/minus.png" />
+
+                <p class="nav-menu-text">Алкоголизм</p>
+                <img class="img-menu" src="./images/header/plus.png" />
+
+                <p class="nav-menu-text">Реабилитация</p>
+                <img class="img-menu" src="./images/header/plus.png" />
+
+                <p class="nav-menu-text">Кодирование</p>
+                <img class="img-menu" src="./images/header/plus.png" />
+
+                <p class="nav-menu-text" style="margin-right: clamp(60.214px, 7.84vw, 140.5px);">Цены</p>
+
+                <p class="nav-menu-text">О клинике</p>
+                <img class="img-menu" src="./images/header/plus.png" />
+
+                <p class="nav-menu-text">Контакты</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content">
+        <!--тело-->
+        <!--первая страница-->
+        <div>
+            <div class="first-body-workspace" style="height: clamp(373.6px, 48.646vw, 934px);">
+                <div class="first-body-request">
+                    <p class="first-body-request-title">Частная наркологическая клиника</p>
+                    <p class="first-body-request-title" style="font-family: 'MontserratItalic'; font-weight: 100">в
+                        Твери</p>
+                    <div>
+                        <ul>
+                            <li><span>Гарантия анонимности</span></li>
+                            <li><span>В стационаре и на дому</span></li>
+                            <li><span>Приезд врача в течении 40 минут</span></li>
+                            <li><span>Реабилитация с пожизненной гарантией от срыва</span></li>
+                        </ul>
+                    </div>
+                    <div class="first-body-request-title-buttons">
+                        <div class="first-body-request-button1" id="openModal">
+                            <p>Оставить заявку</p>
+                        </div>
+                        <div class="first-body-request-button2">
+                            <p>Написать на WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <img class="first-body-rectangle1" src="./images/first_body/Rectangle 35.png" />
+                    <img class="first-body-rectangle2" src="./images/first_body/Rectangle 35-1.png" />
+                    <img class="first-body-rectangle3" src="./images/first_body/Rectangle 34.png" />
+                    <img class='first-body-img' src="./images/first_body/First on main.png" />
+                    <img class="first-body-dots" src="./images/first_body/dots.png" />
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--вторая страница-->
+        <div class="second-body-workspace">
+            <div class="second-body-header">
+                <p class="body-header-title" style="margin-left: clamp(9px, 1.172vw, 21px);">Популярные</p>
+                <p class="body-header-title" style="font-weight: 100;">услуги</p>
+            </div>
+            <div style="display: flex;">
+                <div class="second-body-block1">
+                    <img class="second-body-img" src="./images/first_body/second.png" />
+                    <img class="second-body-dots" src="./images/first_body/dots.png" />
+                    <img class="second-body-rect1" src="./images/first_body/Rectangle 35.png" />
+                    <img class="second-body-rect2" src="./images/first_body/Rectangle 35-1.png" />
+                    <img class="second-body-rect3" src="./images/first_body/Rectangle 34.png" />
+                </div>
+
+                <div class="second-body-container">
+                    <div class="second-body-block2-title">
+                        <img class="second-body-block2-img" src="./images/first_body/need quick help.png" />
+                        <p class="block2-name">Нужна быстрая помощь</p>
+                        <div class="second-body-block2-grid">
+                            <div class="box1">
+                                <p style="font-weight: 900; font-size: clamp(8.571px, 1.116vw, 20px);">Наркомания</p>
+                                <div class="box-grid">
+                                    <p>
+                                        <span class="left">УБОД</span>
+                                        <span class="right">от <span style="font-weight: 900;">30 000</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Снятие ломки</span>
+                                        <span class="right">от <span style="font-weight: 900;">6 500</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Наркологическая помощь</span>
+                                        <span class="right">от <span style="font-weight: 900;">6 000</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Детоксикация от наркотиков</span>
+                                        <span class="right">от <span style="font-weight: 900;">6 000</span> ₽</span>
+                                    </p>
+                                </div>
+
+
+                            </div>
+                            <div class="box2">
+                                <p style="font-weight: 900; font-size: clamp(8.571px, 1.116vw, 20px);">Детоксикация от
+                                    наркотиков</p>
+                                <div class="box-grid">
+                                    <p>
+                                        <span class="left">Вывод из запоя</span>
+                                        <span class="right">от <span style="font-weight: 900;">3 500</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Капельница от похмелья</span>
+                                        <span class="right">от <span style="font-weight: 900;">3 500</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Нарколог на дом</span>
+                                        <span class="right">от <span style="font-weight: 900;">3 500</span> ₽</span>
+                                    </p>
+                                    <p>
+                                        <span class="left">Консультация нарколога</span>
+                                        <span class="right">от <span style="font-weight: 900;">2 000</span> ₽</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second-body-block3-title">
+                            <img class="second-body-block2-img" src="./images/first_body/need comlex treatment.png" />
+                            <p class="block2-name">Нужно комплексное лечение</p>
+                            <div class="second-body-block2-grid">
+                                <div class="box1">
+                                    <p style="font-weight: 900; font-size: clamp(8.571px, 1.116vw, 20px);">Наркомания
+                                    </p>
+                                    <div class="box-grid">
+                                        <p>
+                                            <span class="left">Реабилитация наркомании</span>
+                                            <span class="right">от <span style="font-weight: 900;">40 000</span>
+                                                ₽</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Кодирование Налтрексоном</span>
+                                            <span class="right">от <span style="font-weight: 900;">12 000</span>
+                                                ₽</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Лечение от Соли</span>
+                                            <span class="right">от <span style="font-weight: 900;">12 000</span>
+                                                ₽</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Лечение от Лирики</span>
+                                            <span class="right">от <span style="font-weight: 900;">12 000</span>
+                                                ₽</span>
+                                        </p>
+                                    </div>
+
+
+                                </div>
+                                <div class="box2">
+                                    <p style="font-weight: 900; font-size: clamp(8.571px, 1.116vw, 20px);">Детоксикация
+                                        от
+                                        наркотиков</p>
+                                    <div class="box-grid">
+                                        <p>
+                                            <span class="left">Лечение алкоголизма</span>
+                                            <span class="right">от <span style="font-weight: 900;">3 800</span> ₽</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Реабилитация алкоголизма</span>
+                                            <span class="right">от <span style="font-weight: 900;">1 130</span>
+                                                ₽/сутки</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Кодирование от алкоголизма</span>
+                                            <span class="right">от <span style="font-weight: 900;">3 800</span> ₽</span>
+                                        </p>
+                                        <p>
+                                            <span class="left">Стационарное</span>
+                                            <span class="right">от <span style="font-weight: 900;">6 000</span> ₽</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--третья страница-->
+
+        <div class="third-main">
+            <div class="third-body-workspace">
+                <div class="third-body-header">
+                    <p class="body-header-title" style="margin-left: clamp(9px, 1.172vw, 21px); color: white;">
+                        Популярные</p>
+                    <p class="body-header-title" style="font-weight: 100; color: white;">услуги</p>
+                </div><!--
+                -->
+                <div class="third-body-list">
+                    <div class="third-list">
+                        <img class="third-body-img" src="./images/second_body/1.png" />
+                        <p class="third-body-p">Поступление в клинику вашей заявки или звонка</p>
+                    </div><!--
+                    -->
+                    <div class="third-list">
+                        <img class="third-body-img" src="./images/second_body/2.png" />
+                        <p class="third-body-p">Наш оператор соберет анамнез и назначит специалиста для выезда</p>
+                    </div><!--
+                    -->
+                    <div class="third-list" style="margin-right: 0px;">
+                        <img class="third-body-img" src="./images/second_body/3.png" />
+                        <p class="third-body-p">Врач приезжает за 30 минут</p>
+                    </div>
+                    <div class="third-list">
+                        <img class="third-body-img" src="./images/second_body/4.png" />
+                        <p class="third-body-p">Оплата врачу производится перед процедурами (наличные, переводом на
+                            карту)</p>
+                    </div><!--
+                    -->
+                    <div class="third-list">
+                        <img class="third-body-img" src="./images/second_body/5.png" />
+                        <p class="third-body-p">Оказание пациенту медицинской помощи (капельницы, уколы и др.)</p>
+                    </div><!--
+                    -->
+                    <div class="third-list" style="margin-right: 0px;">
+                        <img class="third-body-img" src="./images/second_body/6.png" />
+                        <p class="third-body-p">Врач приезжает за 30 минут</p>
+                    </div>
+
+                    <img id="object" class="third-main-img" src="./images/second_body/photo.png" />
+                    <img class="third-dots" src="./images/first_body/dots.png" />
+                    <img class="third-dots2" src="./images/first_body/dots.png" />
+                    <img class="third-rect1" src="./images/first_body/Rectangle 35.png" />
+                    <img class="third-rect2" src="./images/first_body/Rectangle 34.png" />
+                    <img class="third-rect3" src="./images/first_body/Rectangle 35-1.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--четвертая страница-->
+        <div class="fourth-body-workspace">
+            <div class="fourth-body-header">
+                <p class="body-header-title" style="margin-left: clamp(9px, 1.172vw, 21px);">Наши лицензии</p>
+                <p class="body-header-title" style="font-weight: 100;">и сертификаты</p>
+            </div>
+            <div class="licence">
+                <img src="./images/second_body/лицензия.png" class="paper" />
+                <img src="./images/second_body/лицензия.png" class="paper" />
+                <img src="./images/second_body/лицензия.png" class="paper" />
+                <img src="./images/second_body/лицензия.png" class="paper" style="margin-right: 0;" />
+                <img src="./images/second_body/loop.png" class="loop" id="loop" />
+
+            </div>
+        </div>
+
+        <!--пятая страница-->
+        <div class="fifth-body-workspace">
+            <div class="fifth-title">
+                <p class="fifth-p-title1">Наркологическая клиника в Москве: </p>
+                <p class="fifth-p-title1" style="font-weight: 400; margin-bottom: clamp(12.8px, 1.667vw, 32px);">опытные
+                    врачи, хорошие условия и гарантия анонимности</p>
+            </div>
+
+            <div style="margin-top: clamp(12.8px, 1.667vw, 32px);margin-bottom: clamp(6.4px, 0.833vw, 16px);">
+                <p class="fifth-text">Алкогольная и наркотическая зависимость – одна из основных возможных причин смерти
+                    во всех странах. Чтобы освободиться от проблемы, больной должен получить профессиональную помощь.
+                    Наркологическая клиника «Запоям – нет» в Москве работает с пациентами, независимо от степени тяжести
+                    их состояния, и разрабатывает индивидуальное эффективное лечение, которое гарантированно избавит от
+                    аддиктивного состояния.
+                </p>
+            </div>
+            <div style="margin-bottom: clamp(6.4px, 0.833vw, 16px);">
+                <p class="fifth-p-title1" style="font-size: clamp(12.8px, 1.667vw, 32px);">Выбор клиники</p>
+            </div>
+            <div style="margin-top: clamp(12.8px, 1.667vw, 32px);margin-bottom: clamp(6.4px, 0.833vw, 16px);">
+                <p class="fifth-text">Зависимость – это психическое заболевание, при котором у человека происходит
+                    расстройство воли, мешающее справиться с компульсивной тягой к этанолу. Справиться с ним
+                    самостоятельно, не обращаясь к наркологу, можно только на первой стадии алкоголизма. Но при развитии
+                    абстиненции, когда психологическая тяга осложняется физической, требуется обратиться в центр помощи
+                    зависимым.
+                    Квалифицированные врачи принимают пациентов в крупных и маленьких городах в государственных и
+                    платных наркологических клиниках. Если учреждение имеет лицензию, оно обязано опираться при лечебном
+                    процессе на клинические рекомендации Минздрава, в которые входит описание всех доказавших
+                    действенность и безопасность методов.
+                </p>
+            </div>
+            <div>
+                <p class="fifth-text" style="font-weight: 700;">Но в коммерческих центрах терапия проходит:</p>
+                <ul>
+                    <li><span style="font-size: clamp(6.4px, 0.833vw, 16px);">Анонимно</span></li>
+                    <li><span style="font-size: clamp(6.4px, 0.833vw, 16px);">C обеспечением высокого уровня
+                            комфорта</span></li>
+                    <li><span style="font-size: clamp(6.4px, 0.833vw, 16px);">C применением современных методик и
+                            хороших препаратов</span></li>
+                </ul>
+                <p class="fifth-text">Кроме приемного отделения и стационара, в частных наркологических клиниках есть
+                    реабилитационный центр и служба выезда специалистов на дом. Помощь оказывается круглосуточно, при
+                    этом пациент может связаться с медиком в любое время суток для получения дополнительной информации о
+                    лечении.
+                </p>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form1">
+                <div
+                    style="margin-top: clamp(12.8px, 1.667vw, 32px); margin-bottom: clamp(9.6px, 1.25vw, 24px); margin-left: clamp(12.8px, 1.667vw, 32px);;">
+                    <p class="form1-title">Получите консультацию специалиста</p>
+                    <p class="form1-title">бесплатно</p>
+                </div>
+                <div class="form2">
+                    <p class="form1-title" style="font-size: clamp(7.2px, 0.938vw, 18px);">Не нашли категорию или
+                        остались вопросы? Оставьте заявку и мы поможем вам</p>
+                </div>
+                <div style="display: flex; margin-bottom: clamp(9.6px, 1.25vw, 24px); ">
+                    <div class="form3">
+                        <img style="background-color: white; opacity: 50%;" src="./images/consultation/user.png" />
+                        <img class="form-img" src="./images/consultation/user.png" />
+
+                        <form class="form-name">
+                            <input type="text" id="nameHax" class="input-form" placeholder="Ваше имя">
+                        </form>
+                    </div>
+                    <div class="form3" style="margin-left: clamp(4px, 0.521vw, 10px);">
+                        <img style="background-color: white; opacity: 50%;" src="./images/consultation/user.png" />
+                        <img class="form-img" src="./images/consultation/telephone.png" />
+
+                        <form class="form-name">
+                            <input id="telHax" class="input-form" placeholder="Телефон">
+                        </form>
+                    </div>
+                    <div class="form-button">
+                        <p class="button-text">Оставить заявку</p>
+                    </div>
+                </div>
+                <div style="margin-left: clamp(12.8px, 1.667vw, 32px);">
+                    <p style="font-size: clamp(6.4px, 0.833vw, 16px); color: wheat;">Нажимая кнопку “Отправить заявку”,
+                        вы даете согласие на обработку <u>персональных данных</u></p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <p id="back-top">
+            <a href="#top"><span></span></a>
+        </p>
+        <div id="third-main-img" class="third-main-img"></div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="modal-form">
+                <textarea id="message" placeholder="Введите ваше сообщение" rows="4"></textarea>
+                <button type="button" id="submitMessage">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="./../../ПССИП(заяц)/index.html">Ссылка на итог</a>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/back_top.js"></script>
+    <script src="./js/move-HP.js"></script>
+    <script src="./js/telephone.js"></script>
+    <script src="./js/name.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/empty.js"></script>
+    <script src="./js/fixed_nuvbar.js"></script>
+
+
+
+</body>
