@@ -1,0 +1,9 @@
+.my_style_for_a:link {
+    color: yellow;
+}
+
+/*hello*/
+.my_style_for_a:visited {
+    color: skyblue;
+    text-decoration: none;
+}

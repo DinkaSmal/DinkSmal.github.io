@@ -1,0 +1,7 @@
+body {
+    background-image: url(cloud.jpg); /*image*/
+    background-repeat: no-repeat;/*без повторкний*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    color: cornflowerblue;
+}
