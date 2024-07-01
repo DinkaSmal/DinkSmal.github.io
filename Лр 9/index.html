@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR 9</title>
+    <script type="text/javascript">
+        function show_alert1() {
+            alert("Внутри head");
+        }
+    </script>
+    <div class="ln_1 block b1" onclick="show_alert1()">
+        <p>In Head</p>
+    </div>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function show_alert2() {
+            alert("Внутри body");
+        }
+    </script>
+    <div class="ln_1 block b1" onclick="show_alert2()">
+        <p>In Body</p>
+    </div>
+    <div class="ln_1 block b3" onclick="alert('Внутри объекта')">
+        <p>In Object</p>
+    </div>
+    <script src="file.js"></script>
+    <div class="ln_2 block b4" onclick="show_alert3()">
+        <p>In File</p>
+    </div>
+</body>
+
+</html>
