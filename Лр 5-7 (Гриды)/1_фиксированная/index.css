@@ -1,0 +1,77 @@
+body {
+    width: 1000px;
+    overflow-x: scroll;
+    color: white;
+}
+
+.angle-head {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.center-head {
+    display: inline-block;
+    width: 800px;
+    height: 100px;
+}
+
+.side {
+    display: inline-block;
+    width: 100px;
+    height: 700px;
+    vertical-align: top;
+}
+
+.main {
+    display: inline-block;
+    height: 700px;
+    width: 800px;
+}
+
+.angle-foot {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.foot-pan {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+}
+
+.foot-main {
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+}
+
+.main-head {
+    display: inline-block;
+    width: 800px;
+    height: 100px;
+}
+
+.main-block {
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+}
+
+.main-pannel {
+    display: inline-block;
+    width: 150px;
+    height: 600px;
+    vertical-align: top;
+}
+
+.main-in-main {
+    display: inline-block;
+    width: 500px;
+    height: 600px;
+}
+
+.main-pannels {
+    height: 200px;
+}
