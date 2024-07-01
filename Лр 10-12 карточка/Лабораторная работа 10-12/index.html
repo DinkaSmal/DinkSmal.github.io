@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR 9</title>
+    <script>
+        function showDate() {
+            var currentDate = new Date();
+            var year = currentDate.getFullYear();
+            var month = currentDate.getMonth();
+
+            var text = month + "-" + year;
+
+            var child = document.createElement("p");
+            child.textContent = text;
+
+            var dateDialog = document.getElementById("dateDialog");
+
+            if (dateDialog.childElementCount > 0) {
+                let child = dateDialog.firstChild;
+                dateDialog.removeChild(child);
+            }
+
+            dateDialog.appendChild(child);
+            dateDialog.setAttribute("open", "");
+        }
+
+        function onMouseLeave() {
+            var dateDialog = document.getElementById("dateDialog");
+
+            if (dateDialog.childElementCount > 0) {
+                let child = dateDialog.firstChild;
+                dateDialog.removeChild(child);
+            }
+
+            dateDialog.removeAttribute("open");
+        }
+    </script>
+</head>
+
+<body>
+    <dialog id="dateDialog"></dialog>
+    <button id="dataBtn" onclick="showDate()" onmouseleave="onMouseLeave(event)">
+        <p>Показать год</p>
+    </button>
+    <style>
+        .names {
+            width: max-content;
+            height: 100px;
+            margin: 10px 0px;
+            padding: 5px;
+            overflow-y: scroll;
+            border: 1px solid black;
+        }
+    </style>
+    <div id="names" class="names"></div>
+    <script>
+        var parent = document.getElementById("names");
+
+        let n = 15;
+        var i = 0;
+        for (i = 1; i <= n; i++) {
+            var child = document.createElement("p");
+            child.textContent = i + " Смаль Дина";
+            parent.appendChild(child);
+        }
+    </script>
+    <style>
+        .title {
+            display: inline;
+        }
+    </style>
+    <div id="basicMass" style="margin-top: 1em;">
+        <h4 class="title">Исходный массив:</h1>
+    </div>
+    <div id="newMass">
+        <h4 class="title">Получившийся массив:</h1>
+    </div>
+    <div id="prodElems" style="margin-bottom: 1em;">
+        <h4 class="title">Среднее арифметическое:</h1>
+    </div>
+    <script>
+        const createElement = (tag, value) => {
+            const element = document.createElement(tag);
+
+            if (tag === "p") {
+                element.textContent = value;
+            }
+
+            return element;
+        };
+
+        let n2 = 6;
+        var summ = 0;
+        var mass = [];
+        for (let i = 0; i < n2; i++) {
+            let value = Math.floor(Math.random() * (10 - -10) + -10);
+            mass[i] = value;
+            summ += mass[i];
+        }
+
+        var result = Math.round(summ / n2);
+        var newMass = mass.slice();
+
+        for (let i = 0; i < n2; i++) {
+            if (newMass[i] > -1)
+                newMass[i] = result;
+        }
+
+        document.getElementById("basicMass").appendChild(createElement("p", mass.join(", ")));
+        document.getElementById("newMass").appendChild(createElement("p", newMass));
+        document.getElementById("prodElems").appendChild(createElement("p", result));
+    </script>
+    <p>y = (3 - x) / (x * x) + 3 * x + 4</p>
+    <input type="number" placeholder="Введите X" onchange="mathInputChange(event)">
+    <p id="mathOutput"></p>
+    <script src="./js/math.js"></script>
+    <script src="./js/string.js"></script>
+    <button onclick="changeStr()">
+        <p>Изменить строки</p>
+    </button>
+</body>
+
+</html>
