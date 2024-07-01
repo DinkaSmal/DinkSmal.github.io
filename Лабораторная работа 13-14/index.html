@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR 13-14</title>
+</head>
+
+<body>
+    <style>
+        .elem1 {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .elem2 {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .elem3 {
+            background-color: red;
+            padding: 5px;
+        }
+
+        .elem2-clicked {
+            color: red;
+            background: yellow;
+            font-weight: bold;
+            font-size: 14px;
+            border: 2px solid blue;
+        }
+    </style>
+    <p class="elem1" onclick="removeFirstElem.apply(this)">Смаль Дина Алексеевна</p>
+    <div class="elem2" onclick="elem2OnClick.apply(this)">17/12/2004</div>
+    <img class="elem3" src="./images/love.png" alt="#">
+    <script>
+        let documentSize = JSON.stringify(document).length;
+        setInterval(() => {
+            alert("Document size is " + documentSize + " bites.");
+        }, 5000);
+
+        function removeFirstElem() {
+            this.remove();
+        };
+
+        isEleme2Clicked = false;
+        function elem2OnClick() {
+            if (!isEleme2Clicked) {
+                this.className += " elem2-clicked";
+                isEleme2Clicked = true;
+            } else {
+                this.className = "elem2";
+                isEleme2Clicked = false;
+            }
+        };
+        
+        if (document.cookie.indexOf("nameCookie") == 0)
+        {
+            alert("Cookie enabel!");
+        } else {
+            alert("Cookie disable");
+        }
+
+        setTimeout(() => {
+            console.log("close");
+            window.close();
+        }, 2000);
+    </script>
+</body>
+
+</html>
