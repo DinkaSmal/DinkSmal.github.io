@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LR 8</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <form >
+        <p class="form-header">Бесплатно зарегистрироваться</p>
+        <div class="form-grid">
+            <div>             
+            </div>
+            <div>
+                <input type="radio" name="checkbox" value="Фрилансер">
+                <p>Фрилансер</p>
+                <input type="radio" name="checkbox" value="Работодатель">
+                <p>Работодатель</p>
+            </div>
+
+            <p>E-mail</p>
+            <div>
+                <input type="email">
+                <p class="form-discription">Нигде не публикуется</p>
+            </div>
+
+            <p>Логин</p>
+            <div>
+                <input type="text">
+                <p class="form-discription">3–15 символов: латинские буквы, цифры,</p>
+                <p class="form-discription">знак подчеркивания (_) и дефис (-)</p>
+            </div>
+
+            <p>Пароль</p>
+            <div>
+                <input type="password">
+                <p class="form-discription">От 6 до 24 символов. Допустимы латинские буквы,</p>
+                <p class="form-discription">цифры и знак подчеркивания (_)</p>
+            </div>
+
+            <p style="padding-top: clamp(20px, 2.604vw, 50px);">Код с картинки</p>
+            <div class="form-code">
+                <img src="./images/capcha.png">
+                <img class="arrow" src="./images/arrow.png">
+                <input type="text">
+            </div>
+            <div></div>
+            <p class="underline-dotted">Обновить картинку</p>
+            <div></div>
+            <div class="green-button"></div>
+        </div>
+    </form>
+    
+    <div class="product-card">
+        <div class="labels">
+            <span class="label recommend">СОВЕТУЕМ</span>
+            <span class="label new">НОВИНКА</span>
+        </div>
+        <img src="bicycle.png" alt="Велосипед Stern Air 1.0" class="product-image">
+        <h2 class="product-title">Велосипед Stern Air 1.0</h2>
+        <div class="rating">
+            <span>★★★★☆</span>
+        </div>
+        <div class="availability">Много</div>
+        <div class="price">
+            <span class="current-price">18 899.10 руб.</span>
+            <span class="original-price">20 999 руб.</span>
+        </div>
+        <div class="savings">Экономия 2 099.90 руб.</div>
+        <div class="footer">
+            <div class="time-left">
+                <span>До конца акции:</span>
+                <span>364 дня 02 час. 01 мин.</span>
+            </div>
+            <div class="stock">
+                <span>Остаток:</span>
+                <span>2000 шт.</span>
+            </div>
+        </div>
+    </div>
+</body>
